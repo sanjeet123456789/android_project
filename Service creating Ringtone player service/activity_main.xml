@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00B31818"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="102dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="176dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/ic_play_circle_outline_black_24dp"
+        android:backgroundTint="@android:color/transparent"
+
+        android:onClick="startPlayer"
+        android:scaleType="fitXY"
+        android:tint="#485CCE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play_circle_outline_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="98dp"
+        android:onClick="stopPlayer"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_stop_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
